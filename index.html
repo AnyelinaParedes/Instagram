@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Create a New post
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+
+                    <div class="modal-footer">
+                        <i class="fas fa-camera"></i>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">publish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="collapse p-2 bd-highligh d-flex justify-content-end" id="navbarScroll">
+        <ul class="navbar-nav navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Link
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+<div class="d-grid gap-2 d-md-flex justify-content-md-center">
+    <a href="index.html"><button class="btn btn-secondary me-md-2" type="button"><i class="fas fa-th"></i></button></a>
+    <a href="index2.html"><button class="btn btn-secondary" type="button"><i class="fas fa-stop"></i></button></a>
+</div>
+<div class="card-group p-5">
+    <div class="card">
+        <img src="https://acf.geeknetic.es/imgri/imagenes/tutoriales/2020/1742-teletrabajo/muestra.jpg?f=webp"
+            class="card-img-top" alt="...">
+
+    </div>
+    <div class="card">
+        <img src="/Paris.webp" class="card-img-top" alt="...">
+
+
+    </div>
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmBKvTduo3aT2a5ZVRgoK31wupor3c48nHCA&usqp=CAU"
+            class="card-img-top" alt="...">
+
+
+    </div>
+    <div class="card-group">
+        <div class="card">
+            <img src="https://s1.eestatic.com/2020/06/23/curiosidades/naturaleza-planeta-tierra/ciencias_naturales-flores-tierra_-planeta_499960581_154305912_1706x960.jpg"
+                class="card-img-top" alt="...">
+
+        </div>
+        <div class="card">
+            <img src="data:image/jpeg;base64,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"
+                class="card-img-top" alt="...">
+
+        </div>
+        <div class="card">
+            <img src="https://thumbs.gfycat.com/CompassionateTerrificKingsnake-size_restricted.gif" class="card-img-top"
+                alt="...">
+
+        </div>
+    </div>
+    <div class="card-group">
+        <div class="card">
+            <img src="https://miro.medium.com/max/960/0*FwyeyYWcrYlurRNs" class="card-img-top" alt="...">
+
+        </div>
+        <div class="card">
+            <img src="https://www.construyehogar.com/wp-content/uploads/2015/06/Fachada-de-casa-de-dos-plantas-con-piscina.jpg"
+                class="card-img-top" alt="...">
+
+        </div>
+        <div class="card">
+            <img src="https://i.chzbgr.com/full/9001843456/hAE33F421/ese-horroroso-momento" class="card-img-top"
+                alt="...">
+
+        </div>
+    </div>
+    <div class="card-group">
+        <div class="card">
+            <img src="https://partfy.com/files/inspiracion/sections/171/cenas.jpg" class="card-img-top" alt="...">
+
+        </div>
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/LnWyGuzLdnU/maxresdefault.jpg" class="card-img-top" alt="...">
+
+        </div>
+        <div class="card">
+            <img src="https://media-cdn.tripadvisor.com/media/vr-splice-j/0a/fe/aa/6d.jpg" class="card-img-top"
+                alt="...">
+
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+
+</html>
